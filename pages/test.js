@@ -34,7 +34,7 @@ const News = () => {
           {isOpen && (
             <div className="border border-yellow-500 mx-auto p-3 w-8/12 ">
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, ut. Ab debitis incidunt atque quia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus fugit debitis, asperiores ipsa culpa amet itaque vitae, illum
+                Lorem dolor, sit amet consectetur adipisicing elit. Sed, ut. Ab debitis incidunt atque quia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus fugit debitis, asperiores ipsa culpa amet itaque vitae, illum
                 officia veritatis minus nihil eos eveniet accusamus tempora! Alias eum quis fugit.
               </p>
             </div>
