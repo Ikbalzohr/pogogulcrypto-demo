@@ -18,24 +18,24 @@ export const Nav = () => {
             </Link>
             <ul className="items-center hidden space-x-8 lg:flex">
               <li>
-                <Link href="/news">
+                <Link href="#">
                   <a aria-label="Our product" title="Our product" className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-300">
                     News
                   </a>
                 </Link>
               </li>
               <li>
-                <a href="" aria-label="Our product" title="Our product" className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-300">
+                <a href="#" aria-label="Our product" title="Our product" className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-300">
                   Press Releases
                 </a>
               </li>
               <li>
-                <a href="/" aria-label="Product pricing" title="Product pricing" className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-300">
+                <a href="#" aria-label="Product pricing" title="Product pricing" className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-300">
                   AMA Recap
                 </a>
               </li>
               <li>
-                <a href="/" aria-label="Product pricing" title="Product pricing" className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-300">
+                <a href="#" aria-label="Product pricing" title="Product pricing" className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-300">
                   Merchandise
                 </a>
               </li>
@@ -104,18 +104,23 @@ export const Nav = () => {
                   <nav>
                     <ul className="space-y-4">
                       <li>
-                        <a href="/" aria-label="Our product" title="Our product" className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-300">
-                          Product
+                        <a href="#" aria-label="Our product" title="Our product" className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-300">
+                          News
                         </a>
                       </li>
                       <li>
-                        <a href="/" aria-label="Our product" title="Our product" className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-300">
-                          Features
+                        <a href="#" aria-label="Our product" title="Our product" className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-300">
+                          Press Releases
                         </a>
                       </li>
                       <li>
-                        <a href="/" aria-label="Product pricing" title="Product pricing" className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-300">
-                          Pricing
+                        <a href="#" aria-label="Product pricing" title="Product pricing" className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-300">
+                          Merchandise
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" aria-label="Product pricing" title="Product pricing" className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-300">
+                          AMA Recap
                         </a>
                       </li>
                       <li>
@@ -124,13 +129,13 @@ export const Nav = () => {
                         </a>
                       </li>
                       <li>
-                        <a href="/" aria-label="Sign in" title="Sign in" className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-300">
+                        <a href="#" aria-label="Sign in" title="Sign in" className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-300">
                           Sign in
                         </a>
                       </li>
                       <li>
                         <a
-                          href="/"
+                          href="#"
                           className="inline-flex items-center justify-center w-full h-9 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-300 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                           aria-label="Sign up"
                           title="Sign up"

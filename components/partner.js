@@ -16,7 +16,7 @@ export const Partner = () => {
             <circle fillOpacity="0.3" fill="currentColor" cx="44" cy="44" r="22.5" />
           </svg>
         </div>
-        <div className="relative px-20 py-20 grid justify-items-center gap-10 sm:grid-cols-2 lg:grid-cols-2 lg:gap-32 lg:justify-items-center ">
+        <div className="relative px-2 py-2 sm:px-5 sm:py-5 lg:px-20 lg:py-20 grid justify-items-center gap-10 sm:grid-cols-2 lg:grid-cols-2 lg:gap-32 lg:justify-items-center ">
           <div className="flex flex-col justify-between overflow-hidden text-left transition-shadow duration-200 bg-white rounded shadow-xl group hover:shadow-2xl">
             <div className="p-5">
               <div className="flex items-center justify-start mb-3 ">
