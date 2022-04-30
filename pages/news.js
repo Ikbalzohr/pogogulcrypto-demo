@@ -2,6 +2,8 @@ import React from "react";
 import { useState } from "react";
 import { Nav } from "../components/Navbar";
 import { Footer } from "../components/Footer";
+import NewsTitle from "../components/NewsTitle";
+import { NewsDetils } from "../components/NewsDetils";
 
 const News = () => {
   const wDF = "w-7/12";
@@ -27,107 +29,37 @@ const News = () => {
   return (
     <section>
       <Nav />
-      <div className="bg-slate-300  mx-auto pt-16 pb-3 flex flex-row h-screen">
-        <div className="border border-red-600 relative m-auto p-5 mt-10 flex flex-row gap justify-center w-9/12">
+      <div className="mx-auto pt-16 pb-3 flex flex-row h-screen">
+        <div className="relative m-auto p-5 mt-10 flex flex-row gap justify-center w-9/12">
           {id !== "" ? (
-            <button onClick={() => setClose()} className={`bg-red-600 h-5 w-5 absolute grid place-content-center left-0 ml-5 ${hide}`}>
-              <div>X</div>
+            <button onClick={() => setClose()} className={`h-5 w-5 absolute grid place-content-center right-32 top-10 ml-5 ${hide}`}>
+              <div>
+                <svg
+                  height="30px"
+                  id="Layer_1"
+                  style={{ enableBackground: "new 0 0 512 512" }}
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xmlSpace="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                >
+                  <path d="M443.6,387.1L312.4,255.4l131.5-130c5.4-5.4,5.4-14.2,0-19.6l-37.4-37.6c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4  L256,197.8L124.9,68.3c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4L68,105.9c-5.4,5.4-5.4,14.2,0,19.6l131.5,130L68.4,387.1  c-2.6,2.6-4.1,6.1-4.1,9.8c0,3.7,1.4,7.2,4.1,9.8l37.4,37.6c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1L256,313.1l130.7,131.1  c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1l37.4-37.6c2.6-2.6,4.1-6.1,4.1-9.8C447.7,393.2,446.2,389.7,443.6,387.1z" />
+                </svg>
+              </div>
             </button>
           ) : (
             ""
           )}
-          <div className={`border border-emerald-500 mx-10 p-3 ${isWeight}`}>
-            <button onClick={() => setClik(1)} className="block">
-              <p>Lorem ipsum dolor sit amet 1 2</p>
-            </button>
-            <button onClick={() => setClik(2)} className="block">
-              <p>Lorem ipsum dolor sit amet 3 4</p>
+          <div className={`mx-10 p-3 flex justify-center ${isWeight}`}>
+            <button onClick={() => setClik(1)}>
+              <NewsTitle />
             </button>
           </div>
           {id == 1 ? (
-            <div className="border border-yellow-500 mx-auto p-3 w-9/12 ">
-              <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-                <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-                  <div>
-                    <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">Brand new</p>
-                  </div>
-                  <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
-                    <span className="relative inline-block">
-                      <svg viewBox="0 0 52 24" fill="currentColor" className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block">
-                        <defs>
-                          <pattern id="679d5905-e08c-4b91-a66c-84aefbb9d2f5" x="0" y="0" width=".135" height=".30">
-                            <circle cx="1" cy="1" r=".7" />
-                          </pattern>
-                        </defs>
-                        <rect fill="url(#679d5905-e08c-4b91-a66c-84aefbb9d2f5)" width="52" height="24" />
-                      </svg>
-                      <span className="relative">1</span>
-                    </span>{" "}
-                    2
-                  </h2>
-                  <p className="text-base text-gray-700 md:text-lg">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae.</p>
-                </div>
-                <div className="mx-auto lg:max-w-2xl">
-                  <div className="relative w-full transition-shadow duration-300 hover:shadow-xl">
-                    <img
-                      className="object-cover w-full h-56 rounded shadow-lg sm:h-64 md:h-80 lg:h-96"
-                      src="https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
-                      alt=""
-                    />
-                    <a href="/" aria-label="Play Video" className="absolute inset-0 flex items-center justify-center w-full h-full transition-colors duration-300 bg-gray-900 bg-opacity-50 group hover:bg-opacity-25">
-                      <div className="flex items-center justify-center w-16 h-16 transition duration-300 transform bg-gray-100 rounded-full shadow-2xl group-hover:scale-110">
-                        <svg className="w-10 text-gray-900" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M16.53,11.152l-8-5C8.221,5.958,7.833,5.949,7.515,6.125C7.197,6.302,7,6.636,7,7v10 c0,0.364,0.197,0.698,0.515,0.875C7.667,17.958,7.833,18,8,18c0.184,0,0.368-0.051,0.53-0.152l8-5C16.822,12.665,17,12.345,17,12 S16.822,11.335,16.53,11.152z" />
-                        </svg>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ) : (
-            ""
-          )}
-          {id == 2 ? (
-            <div className="border border-yellow-500 mx-auto p-3 w-9/12 ">
-              <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-                <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-                  <div>
-                    <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">Brand new</p>
-                  </div>
-                  <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
-                    <span className="relative inline-block">
-                      <svg viewBox="0 0 52 24" fill="currentColor" className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block">
-                        <defs>
-                          <pattern id="679d5905-e08c-4b91-a66c-84aefbb9d2f5" x="0" y="0" width=".135" height=".30">
-                            <circle cx="1" cy="1" r=".7" />
-                          </pattern>
-                        </defs>
-                        <rect fill="url(#679d5905-e08c-4b91-a66c-84aefbb9d2f5)" width="52" height="24" />
-                      </svg>
-                      <span className="relative">3</span>
-                    </span>{" "}
-                    4
-                  </h2>
-                  <p className="text-base text-gray-700 md:text-lg">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae.</p>
-                </div>
-                <div className="mx-auto lg:max-w-2xl">
-                  <div className="relative w-full transition-shadow duration-300 hover:shadow-xl">
-                    <img
-                      className="object-cover w-full h-56 rounded shadow-lg sm:h-64 md:h-80 lg:h-96"
-                      src="https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
-                      alt=""
-                    />
-                    <a href="/" aria-label="Play Video" className="absolute inset-0 flex items-center justify-center w-full h-full transition-colors duration-300 bg-gray-900 bg-opacity-50 group hover:bg-opacity-25">
-                      <div className="flex items-center justify-center w-16 h-16 transition duration-300 transform bg-gray-100 rounded-full shadow-2xl group-hover:scale-110">
-                        <svg className="w-10 text-gray-900" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M16.53,11.152l-8-5C8.221,5.958,7.833,5.949,7.515,6.125C7.197,6.302,7,6.636,7,7v10 c0,0.364,0.197,0.698,0.515,0.875C7.667,17.958,7.833,18,8,18c0.184,0,0.368-0.051,0.53-0.152l8-5C16.822,12.665,17,12.345,17,12 S16.822,11.335,16.53,11.152z" />
-                        </svg>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
+            <div className="mx-auto p-3 w-9/12 ">
+              <NewsDetils />
             </div>
           ) : (
             ""
